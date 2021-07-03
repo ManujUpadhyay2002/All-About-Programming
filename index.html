@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>EC.com</title>
+    <style>
+        .custom-toggler.navbar-toggler {
+            border-color: rgb(248, 239, 245);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- This is Navbar -->
+    <nav class="navbar navbar-expand-lg p-3 bg-dark text-white navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white " href="#">Navbar</a>
+            <button class="navbar-toggler ml-auto custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link px-2 text-secondary" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-2 text-white" href="./Topic.html">Topics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-2 text-white" href="./ContactUs.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-2 text-white" href="./About.html">About</a>
+                    </li>
+
+                </ul>
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3 d-flex">
+                    <input type="search" class="form-control form-control-dark me-2" placeholder="Search..." aria-label="Search">
+                </form>
+                <div class="text-end d-flex">
+                    <button type="button" class="btn btn-outline-info me-2" data-bs-toggle="modal" data-bs-target="#login" data-bs-whatever="@fat">Login</button>
+                    <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#signin" data-bs-whatever="@fat">Sign-up</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar Finish Here. -->
+    <!-- Extra for navbar -->
+    <!-- To add Image Start-->
+    <!-- <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="./index.html" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+            <img src="https://source.unsplash.com/40x30/?coding" alt="" class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
+        </a>
+    </div> -->
+    <!-- To add Image End-->
+    <!-- Modal Start Here  -->
+    <!-- Modal Login -->
+    <div class="modal fade" id="login" tabindex="-1" aria-labelledby="loginLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginLabel">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">E-mail Id :</label>
+                            <input type="email" class="form-control" id="recipient-name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password1" class="col-form-label">Password :</label>
+                            <input type="password" class="form-control" name="login" id="password1" required>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-dismiss="modal" data-bs-target="#logincard" data-bs-whatever="@fat">Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Login Success Card Start Here  -->
+    <div class="modal fade" id="logincard" tabindex="-1" aria-labelledby="logincardLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="card border-success mb-3" style="max-width: 40rem;">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginLabel">Congratulations !</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="card-body text-success">
+                    <h5 class="card-title">You Logged Successfully</h5>
+                    <p class="card-text">Now, Enjoy Content of All About Programming.</p>
+                </div>
+                <div class="card-footer bg-transparent border-success"><b>All About Programming</b></div>
+            </div>
+        </div>
+    </div>
+    <!-- LOgin Success Card end Here -->
+    <!-- Modal Sign In-->
+    <div class="modal fade" id="signin" tabindex="-1" aria-labelledby="signinLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signinLabel">Sign In</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">E-mail Id :</label>
+                            <input type="email" class="form-control" id="recipient-name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password2" class="col-form-label">Create Password :</label>
+                            <input type="password" class="form-control" name="sign in" id="password2" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password3" class="col-form-label">Retype Password :</label>
+                            <input type="password" class="form-control" name="sign in" id="password3" required>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-dismiss="modal" data-bs-target="#signincard" data-bs-whatever="@fat">Sign In</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- sign in  Success Card Start Here  -->
+    <div class="modal fade" id="signincard" tabindex="-1" aria-labelledby="signincardLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="card border-success mb-3" style="max-width: 40rem;">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginLabel">Congratulations !</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="card-body text-success">
+                    <h5 class="card-title">You Sign In Successfully</h5>
+                    <p class="card-text">Now, Enjoy Content of All About Programming.</p>
+                </div>
+                <div class="card-footer bg-transparent border-success"><b>All About Programming</b></div>
+            </div>
+        </div>
+    </div>
+    <!-- sign in Success Card end Here -->
+    <!-- Modal End Here -->
+    <!-- Alert Start Here  -->
+    <!-- <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <strong>Updates!</strong> Latest Programming Language.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div> -->
+    <!-- Alert end Here -->
+    <!-- Back-ground Image Start Here-->
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://source.unsplash.com/1600x900/?coding" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Welcome to !</h5>
+                    <p>All About Programming</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://source.unsplash.com/1600x900/?Web Development" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>WEB-DEVELOPMENT</h5>
+                    <p>EC</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://source.unsplash.com/1600x900/?Android Development" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>ANDROID DEVELOPMENT</h5>
+                    <p>EC</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- Back-ground Image End Here-->
+    <!-- Update Card Start Here  -->
+    <div class="container my-5 mx-2">
+        <div class="row align-items-md-stretch">
+            <div class="col-md-6">
+                <div class="h-100 p-5 text-white bg-dark rounded-3">
+                    <h2>What is Competitive Programming ?</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci sint quae sit temporibus officiis omnis atque non modi exercitationem eius consequuntur error a minima facere nesciunt deleniti ut, optio voluptate.</p>
+                    <button class="btn btn-outline-light" type="button">Read more</button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="h-100 p-5 bg-light border rounded-3">
+                    <h2>How can I start Programming ?</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum incidunt deleniti aut modi doloribus doloremque laboriosam nisi quis enim voluptate, similique in. Mollitia, perspiciatis. Dolor consequatur cupiditate excepturi minima
+                        minus!
+                    </p>
+                    <button class="btn btn-outline-secondary" type="button">Read more</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Update Card end Here -->
+    <!-- Footer Start -->
+    <hr class="featurette-divider">
+    <footer class="container py-5 ">
+        <div class="row ">
+            <div class="col-12 col-md ">
+                <svg xmlns="http://www.w3.org/2000/svg " width="24 " height="24 " fill="none " stroke="currentColor " stroke-linecap="round " stroke-linejoin="round " stroke-width="2 " class="d-block mb-2 " role="img " viewBox="0 0 24 24
+                "><title>Product</title><circle cx="12 " cy="12 " r="10 "></circle><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94 "></path></svg>
+                <small class="d-block mb-3 text-muted ">© 2017–2021</small>
+            </div>
+            <div class="col-6 col-md ">
+                <h5>Topics</h5>
+                <ul class="list-unstyled text-small ">
+                    <li><a class="link-secondary " href="file:///D:/HTML%20with%20VS%20CODE/Bootsrap%20Website/Topic.html#sd">Software Development</a></li>
+                    <li><a class="link-secondary " href="file:///D:/HTML%20with%20VS%20CODE/Bootsrap%20Website/Topic.html#sd">Web Development</a></li>
+                    <li><a class="link-secondary " href="file:///D:/HTML%20with%20VS%20CODE/Bootsrap%20Website/Topic.html#sd">Hard-ware Engineer</a></li>
+                    <li><a class="link-secondary " href="file:///D:/HTML%20with%20VS%20CODE/Bootsrap%20Website/Topic.html#da">Data-base Analysts</a></li>
+                    <li><a class="link-secondary " href="file:///D:/HTML%20with%20VS%20CODE/Bootsrap%20Website/Topic.html#da">Android/iOS Development</a></li>
+                    <li><a class="link-secondary " href="file:///D:/HTML%20with%20VS%20CODE/Bootsrap%20Website/Topic.html#da">Ethical Hacking</a></li>
+                    <li><a class="link-secondary " href="file:///D:/HTML%20with%20VS%20CODE/Bootsrap%20Website/Topic.html#cs">Cyber Security</a></li>
+                    <li><a class="link-secondary " href="file:///D:/HTML%20with%20VS%20CODE/Bootsrap%20Website/Topic.html#cs">Data Scientist</a></li>
+                    <li><a class="link-secondary " href="file:///D:/HTML%20with%20VS%20CODE/Bootsrap%20Website/Topic.html#cs">Artificial Intelligence</a></li>
+                    <li><a class="link-secondary " href="file:///D:/HTML%20with%20VS%20CODE/Bootsrap%20Website/Topic.html#CS">Computer System Analysts</a></li>
+                    <li><a class="link-secondary " href="file:///D:/HTML%20with%20VS%20CODE/Bootsrap%20Website/Topic.html#CS">Block-Chain Development</a></li>
+                </ul>
+            </div>
+
+            <div class="col-6 col-md ">
+                <h5>About</h5>
+                <ul class="list-unstyled text-small ">
+                    <li><a class="link-secondary " href="file:///D:/HTML%20with%20VS%20CODE/Bootsrap%20Website/About.html#am">About me</a></li>
+                    <li><a class="link-secondary " href="file:///D:/HTML%20with%20VS%20CODE/Bootsrap%20Website/About.html#asd">About Site Developer</a></li>
+                    <li><a class="link-secondary " href="file:///D:/HTML%20with%20VS%20CODE/Bootsrap%20Website/About.html#su">Support</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

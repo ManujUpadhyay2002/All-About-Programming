@@ -1,0 +1,1360 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>EC.com/Topic</title>
+    <style>
+        body {
+            background-image: url(./18.jpg);
+        }
+        
+        a:link {
+            text-decoration: none;
+        }
+        
+        a:visited {
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: none;
+        }
+        
+        a:active {
+            text-decoration: none;
+        }
+        
+        .contenedor {
+            height: 100%;
+            padding: 2% 0;
+        }
+        
+        .container_foto {
+            padding: 0;
+            overflow: hidden;
+            max-width: 226px;
+            margin: 0px;
+            margin-left: 1.5cm;
+        }
+        
+        .container_foto img {
+            width: 100%;
+            top: 0;
+            left: 0;
+            opacity: 1;
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
+            -ms-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+        }
+        /*hovers*/
+        
+        .container_foto:hover {
+            cursor: pointer;
+        }
+        
+        .container_foto:hover img {
+            opacity: 1;
+            transform: scale(1.2);
+        }
+        
+        .custom-toggler.navbar-toggler {
+            border-color: rgb(248, 239, 245);
+        }
+        
+        #one {
+            background-color: rgb(253, 25, 25, 0.9);
+        }
+        
+        #two {
+            background-color: rgb(253, 25, 25, 0.8);
+        }
+        
+        #three {
+            background-color: rgb(253, 25, 25, 0.7);
+        }
+        
+        #four {
+            background-color: rgb(253, 25, 25, 0.6);
+        }
+        
+        #five {
+            background-color: rgb(253, 25, 25, 0.5);
+        }
+        
+        #six {
+            background-color: rgba(34, 146, 6, 0.9);
+        }
+        
+        #seven {
+            background-color: rgba(34, 146, 6, 0.8);
+        }
+        
+        #eight {
+            background-color: rgba(34, 146, 6, 0.7);
+        }
+        
+        #nine {
+            background-color: rgba(34, 146, 6, 0.6);
+        }
+        
+        #ten {
+            background-color: rgba(34, 146, 6, 0.5);
+        }
+        
+        #one1 {
+            background-color: rgba(7, 22, 160, 0.9);
+        }
+        
+        #one2 {
+            background-color: rgb(7, 22, 160, 0.8);
+        }
+        
+        #one3 {
+            background-color: rgb(7, 22, 160, 0.7);
+        }
+        
+        #one4 {
+            background-color: rgb(7, 22, 160, 0.6);
+        }
+        
+        #one5 {
+            background-color: rgb(7, 22, 160, 0.5);
+        }
+        
+        #one6 {
+            background-color: rgba(88, 88, 88, 0.9);
+        }
+        
+        #one7 {
+            background-color: rgb(88, 88, 88, 0.8);
+        }
+        
+        #one8 {
+            background-color: rgb(88, 88, 88, 0.7);
+        }
+        
+        #one9 {
+            background-color: rgb(88, 88, 88, 0.6);
+        }
+        
+        #one10 {
+            background-color: rgb(88, 88, 88, 0.5);
+        }
+        
+        #two1 {
+            background-color: rgba(151, 10, 128, 0.9);
+        }
+        
+        #two2 {
+            background-color: rgb(151, 10, 128, 0.8);
+        }
+        
+        #two3 {
+            background-color: rgb(151, 10, 128, 0.7);
+        }
+        
+        #two4 {
+            background-color: rgb(151, 10, 128, 0.6);
+        }
+        
+        #two5 {
+            background-color: rgb(151, 10, 128, 0.5);
+        }
+        
+        #two6 {
+            background-color: rgba(70, 106, 136, 0.9);
+        }
+        
+        #two7 {
+            background-color: rgb(70, 106, 136, 0.8);
+        }
+        
+        #two8 {
+            background-color: rgb(70, 106, 136, 0.7);
+        }
+        
+        #two9 {
+            background-color: rgb(70, 106, 136, 0.6);
+        }
+        
+        #two10 {
+            background-color: rgba(70, 106, 136, 0.5);
+        }
+        
+        #three1 {
+            background-color: rgba(148, 46, 6, 0.9);
+        }
+        
+        #three2 {
+            background-color: rgb(148, 46, 6, 0.8);
+        }
+        
+        #three3 {
+            background-color: rgb(148, 46, 6, 0.7);
+        }
+        
+        #three4 {
+            background-color: rgb(148, 46, 6, 0.6);
+        }
+        
+        #three5 {
+            background-color: rgb(148, 46, 6, 0.5);
+        }
+        
+        #three6 {
+            background-color: rgb(8, 9, 66, 0.9);
+        }
+        
+        #three7 {
+            background-color: rgba(8, 9, 66, 0.8);
+        }
+        
+        #three8 {
+            background-color: rgba(8, 9, 66, 0.7);
+        }
+        
+        #three9 {
+            background-color: rgba(8, 9, 66, 0.6);
+        }
+        
+        #three10 {
+            background-color: rgba(8, 9, 66, 0.5);
+        }
+        
+        #four1 {
+            background-color: rgba(235, 8, 95, 0.9);
+        }
+        
+        #four2 {
+            background-color: rgb(235, 8, 95, 0.8);
+        }
+        
+        #four3 {
+            background-color: rgb(235, 8, 95, 0.7);
+        }
+        
+        #four4 {
+            background-color: rgb(235, 8, 95, 0.6);
+        }
+        
+        #four5 {
+            background-color: rgb(235, 8, 95, 0.5);
+        }
+        
+        #four6 {
+            background-color: rgb(34, 185, 29, 0.9);
+        }
+        
+        #four7 {
+            background-color: rgb(34, 185, 29, 0.8);
+        }
+        
+        #four8 {
+            background-color: rgb(34, 185, 29, 0.7);
+        }
+        
+        #four9 {
+            background-color: rgb(34, 185, 29, 0.6);
+        }
+        
+        #four10 {
+            background-color: rgb(34, 185, 29, 0.5);
+        }
+        
+        #five1 {
+            background-color: rgb(136, 47, 163, 0.9);
+        }
+        
+        #five2 {
+            background-color: rgb(136, 47, 163, 0.8);
+        }
+        
+        #five3 {
+            background-color: rgb(136, 47, 163, 0.7);
+        }
+        
+        #five4 {
+            background-color: rgb(136, 47, 163, 0.6);
+        }
+        
+        #five5 {
+            background-color: rgb(136, 47, 163, 0.5);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- This is Navbar -->
+    <nav class="navbar navbar-expand-lg p-3 bg-dark text-white navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white " href="#">Navbar</a>
+            <button class="navbar-toggler ml-auto custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link px-2 text-white " aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-2 text-secondary" href="./Topic.html">Topics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-2 text-white" href="./ContactUs.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-2 text-white" href="./About.html">About</a>
+                    </li>
+
+                </ul>
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3 d-flex">
+                    <input type="search" class="form-control form-control-dark me-2" placeholder="Search..." aria-label="Search">
+                </form>
+                <div class="text-end d-flex">
+                    <button type="button" class="btn btn-outline-info me-2" data-bs-toggle="modal" data-bs-target="#login" data-bs-whatever="@fat">Login</button>
+                    <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#signin" data-bs-whatever="@fat">Sign-up</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar Finish Here. -->
+    <!-- Modal Start Here  -->
+    <!-- Modal Login -->
+    <div class="modal fade" id="login" tabindex="-1" aria-labelledby="loginLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginLabel">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">E-mail Id :</label>
+                            <input type="email" class="form-control" id="recipient-name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password1" class="col-form-label">Password :</label>
+                            <input type="password" class="form-control" name="login" id="password1" required>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-dismiss="modal" data-bs-target="#logincard" data-bs-whatever="@fat">Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Login Success Card Start Here  -->
+    <div class="modal fade" id="logincard" tabindex="-1" aria-labelledby="logincardLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="card border-success mb-3" style="max-width: 40rem;">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginLabel">Congratulations !</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="card-body text-success">
+                    <h5 class="card-title">You Logged Successfully</h5>
+                    <p class="card-text">Now, Enjoy Content of All About Programming.</p>
+                </div>
+                <div class="card-footer bg-transparent border-success"><b>All About Programming</b></div>
+            </div>
+        </div>
+    </div>
+    <!-- LOgin Success Card end Here -->
+    <!-- Modal Sign In-->
+    <div class="modal fade" id="signin" tabindex="-1" aria-labelledby="signinLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signinLabel">Sign In</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">E-mail Id :</label>
+                            <input type="email" class="form-control" id="recipient-name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password2" class="col-form-label">Create Password :</label>
+                            <input type="password" class="form-control" name="sign in" id="password2" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password3" class="col-form-label">Retype Password :</label>
+                            <input type="password" class="form-control" name="sign in" id="password3" required>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-dismiss="modal" data-bs-target="#signincard" data-bs-whatever="@fat">Sign In</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- sign in  Success Card Start Here  -->
+    <div class="modal fade" id="signincard" tabindex="-1" aria-labelledby="signincardLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="card border-success mb-3" style="max-width: 40rem;">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginLabel">Congratulations !</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="card-body text-success">
+                    <h5 class="card-title">You Sign In Successfully</h5>
+                    <p class="card-text">Now, Enjoy Content of All About Programming.</p>
+                </div>
+                <div class="card-footer bg-transparent border-success"><b>All About Programming</b></div>
+            </div>
+        </div>
+    </div>
+    <!-- sign in Success Card end Here -->
+    <!-- Modal End Here -->
+    <!-- 1 Start -->
+    <div class="container my-5 mx-auto container-fluid contenedor text-center" id="sd">
+        <div class="row row-cols-1 row-cols-md-3 g-4 container text-center">
+            <div class="col col-lg-4 col-md-4 col-sm-6 col-xs-12 container_foto">
+                <a href="#software develpoment" class="link-warning">
+                    <div class="card h-100">
+                        <img src="https://source.unsplash.com/1600x900/?software" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title ">SOFTWARE DEVELOPMENT</h5>
+                </a>
+                <p class="card-text ">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+                </div>
+            </div>
+            <div class="col col-lg-4 col-md-4 col-sm-6 col-xs-12 container_foto">
+                <a href="#web develpoment" class="link-danger ">
+                    <div class="card h-100 ">
+                        <img src="https://source.unsplash.com/1600x900/?web-devlopment " class="card-img-top " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title ">WEB DEVELOPMENT</h5>
+                </a>
+                <p class="card-text ">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                </div>
+                </div>
+            </div>
+            <div class="col col-lg-4 col-md-4 col-sm-6 col-xs-12 container_foto">
+                <a href="#hardware engineer" class="link-success ">
+                    <div class="card h-100 ">
+                        <img src="https://source.unsplash.com/1600x900/?hardware " class="card-img-top " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title ">HARDWARE ENGINEER</h5>
+                </a>
+                <p class="card-text ">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- 1 End -->
+    <!-- 2 Start -->
+    <div class="container my-5 mx-auto container-fluid contenedor text-center" id="da">
+        <div class="row row-cols-1 row-cols-md-3 g-4 container text-center">
+            <div class="col col-lg-4 col-md-4 col-sm-6 col-xs-12 container_foto">
+                <a href="#database analysts" class="link-primary ">
+                    <div class="card h-100 ">
+                        <img src="https://source.unsplash.com/1600x900/?database-analysts " class="card-img-top " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title ">DATABASE ANALYSTS</h5>
+                </a>
+                <p class="card-text ">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                </div>
+                </div>
+            </div>
+            <div class="col col-lg-4 col-md-4 col-sm-6 col-xs-12 container_foto">
+                <a href="#android develpoment" class="link-secondary ">
+                    <div class="card h-100 ">
+                        <img src="https://source.unsplash.com/1600x900/?android " class="card-img-top " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title ">ANDROID/iOS DEVELOPMENT</h5>
+                </a>
+                <p class="card-text ">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+                </div>
+            </div>
+            <div class="col col-lg-4 col-md-4 col-sm-6 col-xs-12 container_foto">
+                <a href="#ethical hacking " class="link-dark ">
+                    <div class="card h-100 ">
+                        <img src="https://source.unsplash.com/1600x900/?hacking " class="card-img-top " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title ">ETHICAL HACKING</h5>
+                </a>
+                <p class="card-text ">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 2 End -->
+    <!-- 3 Start -->
+    <div class="container my-5 mx-auto container-fluid contenedor text-center" id="cs">
+        <div class="row row-cols-1 row-cols-md-3 g-4 container text-center">
+            <div class="col col-lg-4 col-md-4 col-sm-6 col-xs-12 container_foto">
+                <a href="#cyber security " class="link-info ">
+                    <div class="card h-100 ">
+                        <img src="https://source.unsplash.com/1600x900/?cyber-security " class="card-img-top " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title ">CYBER SECURITY</h5>
+                </a>
+                <p class="card-text ">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                </div>
+                </div>
+            </div>
+            <div class="col col-lg-4 col-md-4 col-sm-6 col-xs-12 container_foto">
+                <a href="#data scientist" class="link-warning ">
+                    <div class="card h-100 ">
+                        <img src="https://source.unsplash.com/1600x900/?data-scientist " class="card-img-top " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title ">DATA SCIENTIST</h5>
+                </a>
+                <p class="card-text ">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                </div>
+                </div>
+            </div>
+            <div class="col col-lg-4 col-md-4 col-sm-6 col-xs-12 container_foto">
+                <a href="#artificial intelligence" class="link-primary ">
+                    <div class="card h-100 ">
+                        <img src="https://source.unsplash.com/1600x900/?artificial-intelligence " class="card-img-top " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title ">ARTIFICIAL INTELLIGENCE</h5>
+                </a>
+                <p class="card-text ">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 3 End -->
+    <!-- 4 Start -->
+    <div class="container my-5 mx-auto container-fluid contenedor text-center" id="CS">
+        <div class="row row-cols-1 row-cols-md-3 g-4 container text-center">
+            <div class="col col-lg-4 col-md-4 col-sm-6 col-xs-12 container_foto">
+                <a href="#computer system analysts" class="link-danger ">
+                    <div class="card h-100 ">
+                        <img src="https://source.unsplash.com/1600x900/?operating system " class="card-img-top " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title ">COMPUTER SYSTEM ANALYSTS</h5>
+                </a>
+                <p class="card-text ">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                </div>
+                </div>
+            </div>
+            <div class="col col-lg-4 col-md-4 col-sm-6 col-xs-12 container_foto">
+                <a href="#block-chain developent" class="link-success ">
+                    <div class="card h-100 ">
+                        <img src="https://source.unsplash.com/1600x900/?block-chain " class="card-img-top " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title ">BLOCK-CHAIN DEVELOPMENT</h5>
+                </a>
+                <p class="card-text ">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                </div>
+                </div>
+            </div>
+            <div class="col col-lg-4 col-md-4 col-sm-6 col-xs-12 container_foto">
+                <a href=" " class="link-dark ">
+                    <div class="card h-100 ">
+                        <img src="https://source.unsplash.com/1600x900/?extra " class="card-img-top " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title ">Card title</h5>
+                            <p class="card-text ">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                </a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 4 End -->
+    <hr class="featurette-divider">
+    <!-- Everything In Detail Start -->
+    <div class="container my-5 ">
+        <h1 class="display-6 " id="software develpoment">Software Development</h1>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end ">
+            <button class="btn btn-outline-dark me-md-2 " type="button"><a href="#sd" >Go Top</a></button>
+            </h1>
+        </div>
+        <p></p>
+        <div class="accordion accordion-flush my-2 " id="accordionFlushExample1">
+            <div class="accordion-item ">
+                <h2 class="accordion-header " id="flush-headingOneS">
+                    <button class="accordion-button collapsed text-white" id="one" type="button " data-bs-toggle="collapse" data-bs-target="#flush-collapseOneS " aria-expanded="false " aria-controls="flush-collapseOneS ">
+              Books
+            </button>
+                </h2>
+                <div id="flush-collapseOneS" class="accordion-collapse collapse " aria-labelledby="flush-headingOneS " data-bs-parent="#accordionFlushExample1">
+                    <div class="accordion-body ">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.
+                        <details open=" ">
+                            <summary>Some details</summary>
+                            <p>More info about the details.</p>
+                        </details>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item ">
+                <h2 class="accordion-header " id="flush-headingTwoS">
+                    <button class="accordion-button collapsed text-white " id="two" type="button " data-bs-toggle="collapse" data-bs-target="#flush-collapseTwoS " aria-expanded="false " aria-controls="flush-collapseTwoS ">
+              Free Courses
+            </button>
+                </h2>
+                <div id="flush-collapseTwoS" class="accordion-collapse collapse " aria-labelledby="flush-headingTwoS " data-bs-parent="#accordionFlushExample1">
+                    <div class="accordion-body ">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                </div>
+            </div>
+            <div class="accordion-item ">
+                <h2 class="accordion-header " id="flush-headingThreeS">
+                    <button class="accordion-button collapsed text-white " id="three" type="button " data-bs-toggle="collapse" data-bs-target="#flush-collapseThreeS " aria-expanded="false " aria-controls="flush-collapseThreeS ">
+              Projects
+            </button>
+                </h2>
+                <div id="flush-collapseThreeS" class="accordion-collapse collapse " aria-labelledby="flush-headingThreeS " data-bs-parent="#accordionFlushExample1">
+                    <div class="accordion-body ">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up
+                        the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                </div>
+            </div>
+            <div class="accordion-item ">
+                <h2 class="accordion-header " id="flush-headingFourS">
+                    <button class="accordion-button collapsed text-white " id="four" type="button " data-bs-toggle="collapse" data-bs-target="#flush-collapseFourS " aria-expanded="false " aria-controls="flush-collapseFourS ">
+              Road-maps
+            </button>
+                </h2>
+                <div id="flush-collapseFourS" class="accordion-collapse collapse " aria-labelledby="flush-headingFourS " data-bs-parent="#accordionFlushExample1">
+                    <div class="accordion-body ">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                </div>
+            </div>
+            <div class="accordion-item ">
+                <h2 class="accordion-header " id="flush-headingFiveS">
+                    <button class="accordion-button collapsed text-white " id="five" type="button " data-bs-toggle="collapse" data-bs-target="#flush-collapseFiveS " aria-expanded="false " aria-controls="flush-collapseFiveS ">
+              Job & Internship
+            </button>
+                </h2>
+                <div id="flush-collapseFiveS" class="accordion-collapse collapse " aria-labelledby="flush-headingFiveS " data-bs-parent="#accordionFlushExample1">
+                    <div class="accordion-body ">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container my-5 ">
+        <h1 class="display-6 " id="web develpoment">Web Development</h1>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end ">
+            <button class="btn btn-outline-dark me-md-2 " type="button"><a href="#sd" >Go Top</a></button>
+            </h1>
+        </div>
+        <p></p>
+        <div class="accordion accordion-flush my-2" id="accordionFlushExample2">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOneW">
+                    <button class="accordion-button collapsed text-white" id="six" type=" button " data-bs-toggle="collapse" data-bs-target="#flush-collapseOneW " aria-expanded="false " aria-controls="flush-collapseOneW ">
+              Books
+            </button>
+                </h2>
+                <div id="flush-collapseOneW" class="accordion-collapse collapse " aria-labelledby="flush-headingOneW " data-bs-parent="#accordionFlushExample2">
+                    <div class="accordion-body ">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.
+                        <details open=" ">
+                            <summary>Some details</summary>
+                            <p>More info about the details.</p>
+                        </details>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item ">
+                <h2 class="accordion-header " id="flush-headingTwoW">
+                    <button class="accordion-button collapsed text-white " id="seven" type="button " data-bs-toggle="collapse" data-bs-target="#flush-collapseTwoW " aria-expanded="false " aria-controls="flush-collapseTwoW ">
+              Free Courses
+            </button>
+                </h2>
+                <div id="flush-collapseTwoW" class="accordion-collapse collapse " aria-labelledby="flush-headingTwoW " data-bs-parent="#accordionFlushExample2">
+                    <div class="accordion-body ">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                </div>
+            </div>
+            <div class="accordion-item ">
+                <h2 class="accordion-header " id="flush-headingThreeW">
+                    <button class="accordion-button collapsed text-white " id="eight" type="button " data-bs-toggle="collapse" data-bs-target="#flush-collapseThreeW " aria-expanded="false " aria-controls="flush-collapseThreeW ">
+              Projects
+            </button>
+                </h2>
+                <div id="flush-collapseThreeW" class="accordion-collapse collapse " aria-labelledby="flush-headingThreeW " data-bs-parent="#accordionFlushExample2">
+                    <div class="accordion-body ">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up
+                        the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                </div>
+            </div>
+            <div class="accordion-item ">
+                <h2 class="accordion-header " id="flush-headingFourW">
+                    <button class="accordion-button collapsed text-white " id="nine" type="button " data-bs-toggle="collapse" data-bs-target="#flush-collapseFourW " aria-expanded="false " aria-controls="flush-collapseFourW ">
+              Road-maps
+            </button>
+                </h2>
+                <div id="flush-collapseFourW" class="accordion-collapse collapse " aria-labelledby="flush-headingFourW " data-bs-parent="#accordionFlushExample2">
+                    <div class="accordion-body ">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                </div>
+            </div>
+            <div class="accordion-item ">
+                <h2 class="accordion-header " id="flush-headingFiveW">
+                    <button class="accordion-button collapsed text-white " id="ten" type="button " data-bs-toggle="collapse" data-bs-target="#flush-collapseFiveW " aria-expanded="false " aria-controls="flush-collapseFiveW ">
+              Job & Internship
+            </button>
+                </h2>
+                <div id="flush-collapseFiveW" class="accordion-collapse collapse " aria-labelledby="flush-headingFiveW " data-bs-parent="#accordionFlushExample2">
+                    <div class="accordion-body ">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container my-5 ">
+        <h1 class="display-6 " id="hardware engineer">Hardware Engineer</h1>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end ">
+            <button class="btn btn-outline-dark me-md-2 " type="button "><a href="#sd " >Go Top</a></button>
+            </h1>
+        </div>
+        <p></p>
+        <div class="accordion accordion-flush my-2 " id="accordionFlushExample3">
+            <div class="accordion-item ">
+                <h2 class="accordion-header " id="flush-headingOneH">
+                    <button class="accordion-button collapsed text-white " id="one1" type="button " data-bs-toggle="collapse" data-bs-target="#flush-collapseOneH " aria-expanded="false " aria-controls="flush-collapseOneH ">
+              Books
+            </button>
+                </h2>
+                <div id="flush-collapseOneH" class="accordion-collapse collapse " aria-labelledby="flush-headingOneH " data-bs-parent="#accordionFlushExample3">
+                    <div class="accordion-body ">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.
+                        <details open=" ">
+                            <summary>Some details</summary>
+                            <p>More info about the details.</p>
+                        </details>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item ">
+                <h2 class="accordion-header " id="flush-headingTwoH">
+                    <button class="accordion-button collapsed text-white " id="one2" type="button " data-bs-toggle="collapse" data-bs-target="#flush-collapseTwoH " aria-expanded="false " aria-controls="flush-collapseTwoH ">
+              Free Courses
+            </button>
+                </h2>
+                <div id="flush-collapseTwoH" class="accordion-collapse collapse " aria-labelledby="flush-headingTwoH " data-bs-parent="#accordionFlushExample3">
+                    <div class="accordion-body ">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                </div>
+            </div>
+            <div class="accordion-item ">
+                <h2 class="accordion-header " id="flush-headingThreeH">
+                    <button class="accordion-button collapsed text-white " id="one3" type="button " data-bs-toggle="collapse" data-bs-target="#flush-collapseThreeH " aria-expanded="false " aria-controls="flush-collapseThreeH ">
+              Projects
+            </button>
+                </h2>
+                <div id="flush-collapseThreeH" class="accordion-collapse collapse " aria-labelledby="flush-headingThreeH " data-bs-parent="#accordionFlushExample3">
+                    <div class="accordion-body ">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up
+                        the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                </div>
+            </div>
+            <div class="accordion-item ">
+                <h2 class="accordion-header " id="flush-headingFourH">
+                    <button class="accordion-button collapsed text-white " id="one4" type="button " data-bs-toggle="collapse" data-bs-target="#flush-collapseFourH " aria-expanded="false " aria-controls="flush-collapseFourH ">
+              Road-maps
+            </button>
+                </h2>
+                <div id="flush-collapseFourH" class="accordion-collapse collapse " aria-labelledby="flush-headingFourH " data-bs-parent="#accordionFlushExample3">
+                    <div class="accordion-body ">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                </div>
+            </div>
+            <div class="accordion-item ">
+                <h2 class="accordion-header " id="flush-headingFiveH">
+                    <button class="accordion-button collapsed text-white " id="one5" type="button " data-bs-toggle="collapse" data-bs-target="#flush-collapseFiveH " aria-expanded="false " aria-controls="flush-collapseFiveH ">
+              Job & Internship
+            </button>
+                </h2>
+                <div id="flush-collapseFiveH" class="accordion-collapse collapse " aria-labelledby="flush-headingFiveH " data-bs-parent="#accordionFlushExample3">
+                    <div class="accordion-body ">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container my-5 ">
+        <h1 class="display-6 " id="database analysts">Database Analysts</h1>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end ">
+            <button class="btn btn-outline-dark me-md-2 " type="button "><a href="#da " >Go Top</a></button>
+            </h1>
+        </div>
+        <p></p>
+        <div class="accordion accordion-flush my-2 " id="accordionFlushExample4">
+            <div class="accordion-item ">
+                <h2 class="accordion-header " id="flush-headingOneD">
+                    <button class="accordion-button collapsed text-white " id="one6" type="button " data-bs-toggle="collapse" data-bs-target="#flush-collapseOneD " aria-expanded="false " aria-controls="flush-collapseOneD ">
+              Books
+            </button>
+                </h2>
+                <div id="flush-collapseOneD" class="accordion-collapse collapse " aria-labelledby="flush-headingOneD " data-bs-parent="#accordionFlushExample4">
+                    <div class="accordion-body ">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.
+                        <details open=" ">
+                            <summary>Some details</summary>
+                            <p>More info about the details.</p>
+                        </details>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item ">
+                <h2 class="accordion-header " id="flush-headingTwoD">
+                    <button class="accordion-button collapsed text-white " id="one7" type="button " data-bs-toggle="collapse" data-bs-target="#flush-collapseTwoD " aria-expanded="false " aria-controls="flush-collapseTwoD ">
+              Free Courses
+            </button>
+                </h2>
+                <div id="flush-collapseTwoD" class="accordion-collapse collapse " aria-labelledby="flush-headingTwoD " data-bs-parent="#accordionFlushExample4">
+                    <div class="accordion-body ">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                </div>
+            </div>
+            <div class="accordion-item ">
+                <h2 class="accordion-header " id="flush-headingThreeD">
+                    <button class="accordion-button collapsed text-white " id="one8" type="button " data-bs-toggle="collapse" data-bs-target="#flush-collapseThreeD " aria-expanded="false " aria-controls="flush-collapseThreeD ">
+              Projects
+            </button>
+                </h2>
+                <div id="flush-collapseThreeD" class="accordion-collapse collapse " aria-labelledby="flush-headingThreeD " data-bs-parent="#accordionFlushExample4">
+                    <div class="accordion-body ">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up
+                        the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                </div>
+            </div>
+            <div class="accordion-item ">
+                <h2 class="accordion-header " id="flush-headingFourD">
+                    <button class="accordion-button collapsed text-white " id="one9" type="button " data-bs-toggle="collapse" data-bs-target="#flush-collapseFourD " aria-expanded="false " aria-controls="flush-collapseFourD ">
+              Road-maps
+            </button>
+                </h2>
+                <div id="flush-collapseFourD" class="accordion-collapse collapse " aria-labelledby="flush-headingFourD " data-bs-parent="#accordionFlushExample4">
+                    <div class="accordion-body ">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                </div>
+            </div>
+            <div class="accordion-item ">
+                <h2 class="accordion-header " id="flush-headingFiveD">
+                    <button class="accordion-button collapsed text-white " id="one10" type="button " data-bs-toggle="collapse" data-bs-target="#flush-collapseFiveD " aria-expanded="false " aria-controls="flush-collapseFiveD ">
+              Job & Internship
+            </button>
+                </h2>
+                <div id="flush-collapseFiveD" class="accordion-collapse collapse " aria-labelledby="flush-headingFiveD " data-bs-parent="#accordionFlushExample4">
+                    <div class="accordion-body ">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container my-5 ">
+        <h1 class="display-6 " id="android develpoment">Android/iOS Development</h1>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end ">
+            <button class="btn btn-outline-dark me-md-2 " type="button "><a href="#da " >Go Top</a></button>
+            </h1>
+        </div>
+        <p></p>
+        <div class="accordion accordion-flush my-2 " id="accordionFlushExample5">
+            <div class="accordion-item ">
+                <h2 class="accordion-header " id="flush-headingOneA">
+                    <button class="accordion-button collapsed text-white " id="two1" type="button " data-bs-toggle="collapse" data-bs-target="#flush-collapseOneA " aria-expanded="false " aria-controls="flush-collapseOneA ">
+              Books
+            </button>
+                </h2>
+                <div id="flush-collapseOneA" class="accordion-collapse collapse " aria-labelledby="flush-headingOneA " data-bs-parent="#accordionFlushExample5">
+                    <div class="accordion-body ">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.
+                        <details open=" ">
+                            <summary>Some details</summary>
+                            <p>More info about the details.</p>
+                        </details>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item ">
+                <h2 class="accordion-header " id="flush-headingTwoA">
+                    <button class="accordion-button collapsed text-white " id="two2" type="button " data-bs-toggle="collapse" data-bs-target="#flush-collapseTwoA " aria-expanded="false " aria-controls="flush-collapseTwoA ">
+              Free Courses
+            </button>
+                </h2>
+                <div id="flush-collapseTwoA" class="accordion-collapse collapse " aria-labelledby="flush-headingThreeA " data-bs-parent="#accordionFlushExample5">
+                    <div class="accordion-body ">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up
+                        the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                </div>
+            </div>
+            <div class="accordion-item ">
+                <h2 class="accordion-header " id="flush-headingThreeA">
+                    <button class="accordion-button collapsed text-white " id="two3" type="button " data-bs-toggle="collapse" data-bs-target="#flush-collapseThreeA " aria-expanded="false " aria-controls="flush-collapseThreeA ">
+              Projects
+            </button>
+                </h2>
+                <div id="flush-collapseThreeA" class="accordion-collapse collapse " aria-labelledby="flush-headingThreeA " data-bs-parent="#accordionFlushExample5">
+                    <div class="accordion-body ">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up
+                        the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                </div>
+            </div>
+            <div class="accordion-item ">
+                <h2 class="accordion-header " id="flush-headingFourA">
+                    <button class="accordion-button collapsed text-white " id="two4" type="button " data-bs-toggle="collapse" data-bs-target="#flush-collapseFourA " aria-expanded="false " aria-controls="flush-collapseFourA ">
+              Road-maps
+            </button>
+                </h2>
+                <div id="flush-collapseFourA" class="accordion-collapse collapse " aria-labelledby="flush-headingFourA " data-bs-parent="#accordionFlushExample5">
+                    <div class="accordion-body ">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                </div>
+            </div>
+            <div class="accordion-item ">
+                <h2 class="accordion-header " id="flush-headingFiveA">
+                    <button class="accordion-button collapsed text-white " id="two5" type="button " data-bs-toggle="collapse" data-bs-target="#flush-collapseFiveA " aria-expanded="false " aria-controls="flush-collapseFiveA ">
+              Job & Internship
+            </button>
+                </h2>
+                <div id="flush-collapseFiveA" class="accordion-collapse collapse " aria-labelledby="flush-headingFiveA " data-bs-parent="#accordionFlushExample5">
+                    <div class="accordion-body ">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container my-5 ">
+        <h1 class="display-6 " id="ethical hacking">Ethical Hacking</h1>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end ">
+            <button class="btn btn-outline-dark me-md-2 " type="button "><a href="#da " >Go Top</a></button>
+            </h1>
+        </div>
+        <p></p>
+        <div class="accordion accordion-flush my-2 " id="accordionFlushExample6">
+            <div class="accordion-item ">
+                <h2 class="accordion-header " id="flush-headingOneE">
+                    <button class="accordion-button collapsed text-white" id="two6" type="button " data-bs-toggle="collapse" data-bs-target="#flush-collapseOneE " aria-expanded="false " aria-controls="flush-collapseOneE ">
+              Books
+            </button>
+                </h2>
+                <div id="flush-collapseOneE" class="accordion-collapse collapse " aria-labelledby="flush-headingOneE " data-bs-parent="#accordionFlushExample6">
+                    <div class="accordion-body ">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.
+                        <details open=" ">
+                            <summary>Some details</summary>
+                            <p>More info about the details.</p>
+                        </details>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item ">
+                <h2 class="accordion-header " id="flush-headingTwoE">
+                    <button class="accordion-button collapsed text-white " id="two7" type="button " data-bs-toggle="collapse" data-bs-target="#flush-collapseTwoE " aria-expanded="false " aria-controls="flush-collapseTwoE ">
+              Free Courses
+            </button>
+                </h2>
+                <div id="flush-collapseTwoE" class="accordion-collapse collapse " aria-labelledby="flush-headingTwoE " data-bs-parent="#accordionFlushExample6">
+                    <div class="accordion-body ">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                </div>
+            </div>
+            <div class="accordion-item ">
+                <h2 class="accordion-header " id="flush-headingThreeE">
+                    <button class="accordion-button collapsed text-white " id="two8" type="button " data-bs-toggle="collapse" data-bs-target="#flush-collapseThreeE " aria-expanded="false " aria-controls="flush-collapseThreeE ">
+              Projects
+            </button>
+                </h2>
+                <div id="flush-collapseThreeE" class="accordion-collapse collapse " aria-labelledby="flush-headingThreeE " data-bs-parent="#accordionFlushExample6">
+                    <div class="accordion-body ">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up
+                        the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                </div>
+            </div>
+            <div class="accordion-item ">
+                <h2 class="accordion-header " id="flush-headingFourE">
+                    <button class="accordion-button collapsed text-white " id="two9" type="button " data-bs-toggle="collapse" data-bs-target="#flush-collapseFourE " aria-expanded="false " aria-controls="flush-collapseFourE ">
+              Road-maps
+            </button>
+                </h2>
+                <div id="flush-collapseFourE" class="accordion-collapse collapse " aria-labelledby="flush-headingFourE " data-bs-parent="#accordionFlushExample6">
+                    <div class="accordion-body ">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                </div>
+            </div>
+            <div class="accordion-item ">
+                <h2 class="accordion-header " id="flush-headingFiveE">
+                    <button class="accordion-button collapsed text-white " id="two10" type="button " data-bs-toggle="collapse" data-bs-target="#flush-collapseFiveE " aria-expanded="false " aria-controls="flush-collapseFiveE ">
+              Job & Internship
+            </button>
+                </h2>
+                <div id="flush-collapseFiveE" class="accordion-collapse collapse " aria-labelledby="flush-headingFiveE " data-bs-parent="#accordionFlushExample6">
+                    <div class="accordion-body ">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container my-5 ">
+        <h1 class="display-6 " id="cyber security">Cyber Security</h1>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end ">
+            <button class="btn btn-outline-dark me-md-2 " type="button "><a href="#cs " >Go Top</a></button>
+            </h1>
+        </div>
+        <p></p>
+        <div class="accordion accordion-flush my-2 " id="accordionFlushExample7">
+            <div class="accordion-item ">
+                <h2 class="accordion-header " id="flush-headingOneC">
+                    <button class="accordion-button collapsed text-white " id="three1" type="button " data-bs-toggle="collapse" data-bs-target="#flush-collapseOneC " aria-expanded="false " aria-controls="flush-collapseOneC ">
+              Books
+            </button>
+                </h2>
+                <div id="flush-collapseOneC" class="accordion-collapse collapse " aria-labelledby="flush-headingOneC " data-bs-parent="#accordionFlushExample7">
+                    <div class="accordion-body ">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.
+                        <details open=" ">
+                            <summary>Some details</summary>
+                            <p>More info about the details.</p>
+                        </details>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item ">
+                <h2 class="accordion-header " id="flush-headingTwoC">
+                    <button class="accordion-button collapsed text-white " id="three2" type="button " data-bs-toggle="collapse" data-bs-target="#flush-collapseTwoC " aria-expanded="false " aria-controls="flush-collapseTwoC ">
+              Free Courses
+            </button>
+                </h2>
+                <div id="flush-collapseTwoC" class="accordion-collapse collapse " aria-labelledby="flush-headingTwoC " data-bs-parent="#accordionFlushExample7">
+                    <div class="accordion-body ">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                </div>
+            </div>
+            <div class="accordion-item ">
+                <h2 class="accordion-header " id="flush-headingThreeC ">
+                    <button class="accordion-button collapsed text-white " id="three3" type="button " data-bs-toggle="collapse" data-bs-target="#flush-collapseThreeC " aria-expanded="false " aria-controls="flush-collapseThreeC ">
+              Projects
+            </button>
+                </h2>
+                <div id="flush-collapseThreeC" class="accordion-collapse collapse " aria-labelledby="flush-headingThreeC " data-bs-parent="#accordionFlushExample7">
+                    <div class="accordion-body ">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up
+                        the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                </div>
+            </div>
+            <div class="accordion-item ">
+                <h2 class="accordion-header " id="flush-headingFourC">
+                    <button class="accordion-button collapsed text-white " id="three4" type="button " data-bs-toggle="collapse" data-bs-target="#flush-collapseFourC " aria-expanded="false " aria-controls="flush-collapseFourC ">
+              Road-maps
+            </button>
+                </h2>
+                <div id="flush-collapseFourC" class="accordion-collapse collapse " aria-labelledby="flush-headingFourC " data-bs-parent="#accordionFlushExample7">
+                    <div class="accordion-body ">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                </div>
+            </div>
+            <div class="accordion-item ">
+                <h2 class="accordion-header " id="flush-headingFiveC">
+                    <button class="accordion-button collapsed text-white " id="three5" type="button " data-bs-toggle="collapse" data-bs-target="#flush-collapseFiveC " aria-expanded="false " aria-controls="flush-collapseFiveC ">
+              Job & Internship
+            </button>
+                </h2>
+                <div id="flush-collapseFiveC" class="accordion-collapse collapse " aria-labelledby="flush-headingFiveC " data-bs-parent="#accordionFlushExample7">
+                    <div class="accordion-body ">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container my-5 ">
+        <h1 class="display-6 " id="data scientist">Data Scientist</h1>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end ">
+            <button class="btn btn-outline-dark me-md-2 " type="button "><a href="#cs " >Go Top</a></button>
+            </h1>
+        </div>
+        <p></p>
+        <div class="accordion accordion-flush my-2 " id="accordionFlushExample8">
+            <div class="accordion-item ">
+                <h2 class="accordion-header " id="flush-headingOneDS">
+                    <button class="accordion-button collapsed text-white " id="three6" type="button " data-bs-toggle="collapse" data-bs-target="#flush-collapseOneDS " aria-expanded="false " aria-controls="flush-collapseOneDS ">
+              Books
+            </button>
+                </h2>
+                <div id="flush-collapseOneDS" class="accordion-collapse collapse " aria-labelledby="flush-headingOneDS " data-bs-parent="#accordionFlushExample8">
+                    <div class="accordion-body ">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.
+                        <details open=" ">
+                            <summary>Some details</summary>
+                            <p>More info about the details.</p>
+                        </details>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item ">
+                <h2 class="accordion-header " id="flush-headingTwoDS">
+                    <button class="accordion-button collapsed text-white " id="three7" type="button " data-bs-toggle="collapse" data-bs-target="#flush-collapseTwoDS " aria-expanded="false " aria-controls="flush-collapseTwoDS ">
+              Free Courses
+            </button>
+                </h2>
+                <div id="flush-collapseTwoDS" class="accordion-collapse collapse " aria-labelledby="flush-headingTwoDS " data-bs-parent="#accordionFlushExample8">
+                    <div class="accordion-body ">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                </div>
+            </div>
+            <div class="accordion-item ">
+                <h2 class="accordion-header " id="flush-headingThreeDS">
+                    <button class="accordion-button collapsed text-white " id="three8" type="button " data-bs-toggle="collapse" data-bs-target="#flush-collapseThreeDS " aria-expanded="false " aria-controls="flush-collapseThreeDS ">
+              Projects
+            </button>
+                </h2>
+                <div id="flush-collapseThreeDS" class="accordion-collapse collapse " aria-labelledby="flush-headingThreeDS " data-bs-parent="#accordionFlushExample8">
+                    <div class="accordion-body ">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up
+                        the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                </div>
+            </div>
+            <div class="accordion-item ">
+                <h2 class="accordion-header " id="flush-headingFourDS">
+                    <button class="accordion-button collapsed text-white " id="three9" type="button " data-bs-toggle="collapse" data-bs-target="#flush-collapseFourDS " aria-expanded="false " aria-controls="flush-collapseFourDS ">
+              Road-maps
+            </button>
+                </h2>
+                <div id="flush-collapseFourDS" class="accordion-collapse collapse " aria-labelledby="flush-headingFourDS " data-bs-parent="#accordionFlushExample8">
+                    <div class="accordion-body ">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                </div>
+            </div>
+            <div class="accordion-item ">
+                <h2 class="accordion-header " id="flush-headingFiveDS">
+                    <button class="accordion-button collapsed text-white " id="three10" type="button " data-bs-toggle="collapse" data-bs-target="#flush-collapseFiveDS " aria-expanded="false " aria-controls="flush-collapseFiveDS ">
+              Job & Internship
+            </button>
+                </h2>
+                <div id="flush-collapseFiveDS" class="accordion-collapse collapse " aria-labelledby="flush-headingFiveDS " data-bs-parent="#accordionFlushExample8">
+                    <div class="accordion-body ">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container my-5 ">
+        <h1 class="display-6 " id="artificial intelligence">Artificial Intelligence</h1>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end ">
+            <button class="btn btn-outline-dark me-md-2 " type="button "><a href="#cs " >Go Top</a></button>
+            </h1>
+        </div>
+        <p></p>
+        <div class="accordion accordion-flush my-2 " id="accordionFlushExample9">
+            <div class="accordion-item ">
+                <h2 class="accordion-header " id="flush-headingOneAI">
+                    <button class="accordion-button collapsed text-white " id="four1" type="button " data-bs-toggle="collapse" data-bs-target="#flush-collapseOneAI " aria-expanded="false " aria-controls="flush-collapseOneAI ">
+              Books
+            </button>
+                </h2>
+                <div id="flush-collapseOneAI" class="accordion-collapse collapse " aria-labelledby="flush-headingOneAI " data-bs-parent="#accordionFlushExample9">
+                    <div class="accordion-body ">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.
+                        <details open=" ">
+                            <summary>Some details</summary>
+                            <p>More info about the details.</p>
+                        </details>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item ">
+                <h2 class="accordion-header " id="flush-headingTwoAI">
+                    <button class="accordion-button collapsed text-white " id="four2" type="button " data-bs-toggle="collapse" data-bs-target="#flush-collapseTwoAI " aria-expanded="false " aria-controls="flush-collapseTwoAI ">
+              Free Courses
+            </button>
+                </h2>
+                <div id="flush-collapseTwoAI" class="accordion-collapse collapse " aria-labelledby="flush-headingTwoAI " data-bs-parent="#accordionFlushExample9">
+                    <div class="accordion-body ">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                </div>
+            </div>
+            <div class="accordion-item ">
+                <h2 class="accordion-header " id="flush-headingThreeAI">
+                    <button class="accordion-button collapsed text-white " id="four3" type="button " data-bs-toggle="collapse" data-bs-target="#flush-collapseThreeAI " aria-expanded="false " aria-controls="flush-collapseThreeAI ">
+              Projects
+            </button>
+                </h2>
+                <div id="flush-collapseThreeAI" class="accordion-collapse collapse " aria-labelledby="flush-headingThreeAI " data-bs-parent="#accordionFlushExample9">
+                    <div class="accordion-body ">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up
+                        the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                </div>
+            </div>
+            <div class="accordion-item ">
+                <h2 class="accordion-header " id="flush-headingFourAI">
+                    <button class="accordion-button collapsed text-white " id="four4" type="button " data-bs-toggle="collapse" data-bs-target="#flush-collapseFourAI " aria-expanded="false " aria-controls="flush-collapseFourAI ">
+              Road-maps
+            </button>
+                </h2>
+                <div id="flush-collapseFourAI" class="accordion-collapse collapse " aria-labelledby="flush-headingFourAI " data-bs-parent="#accordionFlushExample9">
+                    <div class="accordion-body ">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                </div>
+            </div>
+            <div class="accordion-item ">
+                <h2 class="accordion-header " id="flush-headingFiveAI">
+                    <button class="accordion-button collapsed text-white " id="four5" type="button " data-bs-toggle="collapse" data-bs-target="#flush-collapseFiveAI " aria-expanded="false " aria-controls="flush-collapseFiveAI ">
+              Job & Internship
+            </button>
+                </h2>
+                <div id="flush-collapseFiveAI" class="accordion-collapse collapse " aria-labelledby="flush-headingFiveAI " data-bs-parent="#accordionFlushExample9">
+                    <div class="accordion-body ">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container my-5 ">
+        <h1 class="display-6 " id="computer system analysts">Computer System Analysts</h1>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end ">
+            <button class="btn btn-outline-dark me-md-2 " type="button "><a href="#CS " >Go Top</a></button>
+            </h1>
+        </div>
+        <p></p>
+        <div class="accordion accordion-flush my-2 " id="accordionFlushExample10">
+            <div class="accordion-item ">
+                <h2 class="accordion-header " id="flush-headingOneCS">
+                    <button class="accordion-button collapsed text-white " id="four6" type="button " data-bs-toggle="collapse" data-bs-target="#flush-collapseOneCS " aria-expanded="false " aria-controls="flush-collapseOneCS ">
+              Books
+            </button>
+                </h2>
+                <div id="flush-collapseOneCS" class="accordion-collapse collapse " aria-labelledby="flush-headingOneCS " data-bs-parent="#accordionFlushExample10">
+                    <div class="accordion-body ">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.
+                        <details open=" ">
+                            <summary>Some details</summary>
+                            <p>More info about the details.</p>
+                        </details>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item ">
+                <h2 class="accordion-header " id="flush-headingTwoCS">
+                    <button class="accordion-button collapsed text-white " id="four7" type="button " data-bs-toggle="collapse" data-bs-target="#flush-collapseTwoCS " aria-expanded="false " aria-controls="flush-collapseTwoCS ">
+              Free Courses
+            </button>
+                </h2>
+                <div id="flush-collapseTwoCS" class="accordion-collapse collapse " aria-labelledby="flush-headingTwoCS " data-bs-parent="#accordionFlushExample10">
+                    <div class="accordion-body ">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                </div>
+            </div>
+            <div class="accordion-item ">
+                <h2 class="accordion-header " id="flush-headingThreeCS">
+                    <button class="accordion-button collapsed text-white " id="four8" type="button " data-bs-toggle="collapse" data-bs-target="#flush-collapseThreeCS " aria-expanded="false " aria-controls="flush-collapseThreeCS ">
+              Projects
+            </button>
+                </h2>
+                <div id="flush-collapseThreeCS" class="accordion-collapse collapse " aria-labelledby="flush-headingThreeCS " data-bs-parent="#accordionFlushExample10">
+                    <div class="accordion-body ">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up
+                        the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                </div>
+            </div>
+            <div class="accordion-item ">
+                <h2 class="accordion-header " id="flush-headingFourCS">
+                    <button class="accordion-button collapsed text-white " id="four9" type="button " data-bs-toggle="collapse" data-bs-target="#flush-collapseFourCS " aria-expanded="false " aria-controls="flush-collapseFourCS ">
+              Road-maps
+            </button>
+                </h2>
+                <div id="flush-collapseFourCS" class="accordion-collapse collapse " aria-labelledby="flush-headingFourCS " data-bs-parent="#accordionFlushExample10">
+                    <div class="accordion-body ">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                </div>
+            </div>
+            <div class="accordion-item ">
+                <h2 class="accordion-header " id="flush-headingFiveCS">
+                    <button class="accordion-button collapsed text-white " id="four10" type="button " data-bs-toggle="collapse" data-bs-target="#flush-collapseFiveCS " aria-expanded="false " aria-controls="flush-collapseFiveCS ">
+              Job & Internship
+            </button>
+                </h2>
+                <div id="flush-collapseFiveCS" class="accordion-collapse collapse " aria-labelledby="flush-headingFiveCS " data-bs-parent="#accordionFlushExample10">
+                    <div class="accordion-body ">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container my-5 ">
+        <h1 class="display-6 " id="block-chain developent">Block-Chain Development</h1>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end ">
+            <button class="btn btn-outline-dark me-md-2 " type="button "><a href="#CS " >Go Top</a></button>
+            </h1>
+        </div>
+        <p></p>
+        <div class="accordion accordion-flush my-2 " id="accordionFlushExample11">
+            <div class="accordion-item ">
+                <h2 class="accordion-header " id="flush-headingOneB">
+                    <button class="accordion-button collapsed text-white " id="five1" type="button " data-bs-toggle="collapse" data-bs-target="#flush-collapseOneB " aria-expanded="false " aria-controls="flush-collapseOneB ">
+              Books
+            </button>
+                </h2>
+                <div id="flush-collapseOneB" class="accordion-collapse collapse " aria-labelledby="flush-headingOneB " data-bs-parent="#accordionFlushExample11">
+                    <div class="accordion-body ">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.
+                        <details open=" ">
+                            <summary>Some details</summary>
+                            <p>More info about the details.</p>
+                        </details>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item ">
+                <h2 class="accordion-header " id="flush-headingTwoB">
+                    <button class="accordion-button collapsed text-white " id="five2" type="button " data-bs-toggle="collapse" data-bs-target="#flush-collapseTwoB " aria-expanded="false " aria-controls="flush-collapseTwoB ">
+              Free Courses
+            </button>
+                </h2>
+                <div id="flush-collapseTwoB" class="accordion-collapse collapse " aria-labelledby="flush-headingTwoB " data-bs-parent="#accordionFlushExample11">
+                    <div class="accordion-body ">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                </div>
+            </div>
+            <div class="accordion-item ">
+                <h2 class="accordion-header " id="flush-headingThreeB">
+                    <button class="accordion-button collapsed text-white " id="five3" type="button " data-bs-toggle="collapse" data-bs-target="#flush-collapseThreeB " aria-expanded="false " aria-controls="flush-collapseThreeB ">
+              Projects
+            </button>
+                </h2>
+                <div id="flush-collapseThreeB" class="accordion-collapse collapse " aria-labelledby="flush-headingThreeB " data-bs-parent="#accordionFlushExample11">
+                    <div class="accordion-body ">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up
+                        the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                </div>
+            </div>
+            <div class="accordion-item ">
+                <h2 class="accordion-header " id="flush-headingFourB">
+                    <button class="accordion-button collapsed text-white " id="five4" type="button " data-bs-toggle="collapse" data-bs-target="#flush-collapseFourB " aria-expanded="false " aria-controls="flush-collapseFourB ">
+              Road-maps
+            </button>
+                </h2>
+                <div id="flush-collapseFourB" class="accordion-collapse collapse " aria-labelledby="flush-headingFourB " data-bs-parent="#accordionFlushExample11">
+                    <div class="accordion-body ">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                </div>
+            </div>
+            <div class="accordion-item ">
+                <h2 class="accordion-header " id="flush-headingFiveB">
+                    <button class="accordion-button collapsed text-white " id="five5" type="button " data-bs-toggle="collapse" data-bs-target="#flush-collapseFiveB " aria-expanded="false " aria-controls="flush-collapseFiveB ">
+              Job & Internship
+            </button>
+                </h2>
+                <div id="flush-collapseFiveB" class="accordion-collapse collapse " aria-labelledby="flush-headingFiveB " data-bs-parent="#accordionFlushExample11">
+                    <div class="accordion-body ">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Everything In Detail End -->
+    <!-- Footer Start -->
+    <hr class="featurette-divider ">
+    <footer class="container py-5 ">
+        <div class="row ">
+            <div class="col-12 col-md ">
+                <svg xmlns="http://www.w3.org/2000/svg " width="24 " height="24 " fill="none " stroke="currentColor " stroke-linecap="round " stroke-linejoin="round " stroke-width="2 " class="d-block mb-2 " role="img " viewBox="0 0 24 24
+                "><title>Product</title><circle cx="12 " cy="12 " r="10 "></circle><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94 "></path></svg>
+                <small class="d-block mb-3 text-muted ">© 2017–2021</small>
+            </div>
+            <div class="col-6 col-md ">
+                <h5>Topics</h5>
+                <ul class="list-unstyled text-small ">
+                    <li><a class="link-secondary " href="file:///D:/HTML%20with%20VS%20CODE/Bootsrap%20Website/Topic.html#sd">Software Development</a></li>
+                    <li><a class="link-secondary " href="file:///D:/HTML%20with%20VS%20CODE/Bootsrap%20Website/Topic.html#sd">Web Development</a></li>
+                    <li><a class="link-secondary " href="file:///D:/HTML%20with%20VS%20CODE/Bootsrap%20Website/Topic.html#sd">Hard-ware Engineer</a></li>
+                    <li><a class="link-secondary " href="file:///D:/HTML%20with%20VS%20CODE/Bootsrap%20Website/Topic.html#da">Data-base Analysts</a></li>
+                    <li><a class="link-secondary " href="file:///D:/HTML%20with%20VS%20CODE/Bootsrap%20Website/Topic.html#da">Android/iOS Development</a></li>
+                    <li><a class="link-secondary " href="file:///D:/HTML%20with%20VS%20CODE/Bootsrap%20Website/Topic.html#da">Ethical Hacking</a></li>
+                    <li><a class="link-secondary " href="file:///D:/HTML%20with%20VS%20CODE/Bootsrap%20Website/Topic.html#cs">Cyber Security</a></li>
+                    <li><a class="link-secondary " href="file:///D:/HTML%20with%20VS%20CODE/Bootsrap%20Website/Topic.html#cs">Data Scientist</a></li>
+                    <li><a class="link-secondary " href="file:///D:/HTML%20with%20VS%20CODE/Bootsrap%20Website/Topic.html#cs">Artificial Intelligence</a></li>
+                    <li><a class="link-secondary " href="file:///D:/HTML%20with%20VS%20CODE/Bootsrap%20Website/Topic.html#CS">Computer System Analysts</a></li>
+                    <li><a class="link-secondary " href="file:///D:/HTML%20with%20VS%20CODE/Bootsrap%20Website/Topic.html#CS">Block-Chain Development</a></li>
+                </ul>
+            </div>
+
+            <div class="col-6 col-md ">
+                <h5>About</h5>
+                <ul class="list-unstyled text-small ">
+                    <li><a class="link-secondary " href="file:///D:/HTML%20with%20VS%20CODE/Bootsrap%20Website/About.html#am">About me</a></li>
+                    <li><a class="link-secondary " href="file:///D:/HTML%20with%20VS%20CODE/Bootsrap%20Website/About.html#asd">About Site Developer</a></li>
+                    <li><a class="link-secondary " href="file:///D:/HTML%20with%20VS%20CODE/Bootsrap%20Website/About.html#su">Support</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js " integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM " crossorigin="anonymous "></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js " integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js " integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF " crossorigin="anonymous "></script>
+    -->
+</body>
+
+</html>
